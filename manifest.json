@@ -1,0 +1,30 @@
+{
+
+  "description": "Click4You",
+  "manifest_version": 2,
+  "name": "itch io bundle clicker",
+  "version": "1.0.3",
+  "homepage_url": "https://github.com/amorvincitomnia/Price2Time/",
+  "icons": {
+    "48": "icons/icon-48.png"
+  },
+
+  "content_scripts": [
+    {
+      "matches": [
+        "*://*.itch.io/*"
+      ],
+      "js": ["bundle_clicker.js"]
+    }
+  ], 
+  "permissions": [   
+    "storage"
+  ],
+
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "cardos.jeison@gmail.com",
+      "strict_min_version": "57.0"
+    }
+  }
+}
